@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-20T06:02:30Z" name="Default suite" finished-at="2022-10-20T06:02:43Z" duration-ms="13213">
+    <groups>
+      <group name="smoke">
+        <method signature="CreateContactWithOrgname.createContactWithOrgName()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" name="createContactWithOrgName" class="testNG_Practice.CreateContactWithOrgname"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-10-20T06:02:30Z" name="Default test" finished-at="2022-10-20T06:02:43Z" duration-ms="13213">
+      <class name="testNG_Practice.CreateContactWithOrgname">
+        <test-method is-config="true" signature="connectDataBase()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:30Z" name="connectDataBase" finished-at="2022-10-20T06:02:30Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectDataBase -->
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:30Z" name="launchTheBrowser" finished-at="2022-10-20T06:02:36Z" duration-ms="6140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="loginIntoPage()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:36Z" name="loginIntoPage" finished-at="2022-10-20T06:02:38Z" duration-ms="2652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoPage -->
+        <test-method signature="createContactWithOrgName()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:38Z" name="createContactWithOrgName" finished-at="2022-10-20T06:02:38Z" duration-ms="16" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[.\CommonDataNew\CommonD.xlsx (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: .\CommonDataNew\CommonD.xlsx (The system cannot find the file specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at GenericUtility.ExcelFileUtility.readDatafromExcelFile(ExcelFileUtility.java:15)
+at testNG_Practice.CreateContactWithOrgname.createContactWithOrgName(CreateContactWithOrgname.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrgName -->
+        <test-method is-config="true" signature="logoutFromPage()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:38Z" name="logoutFromPage" finished-at="2022-10-20T06:02:43Z" duration-ms="4109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromPage -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:43Z" name="closeTheBrowser" finished-at="2022-10-20T06:02:43Z" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="disconnectDataBase()[pri:0, instance:testNG_Practice.CreateContactWithOrgname@16eccb2e]" started-at="2022-10-20T06:02:43Z" name="disconnectDataBase" finished-at="2022-10-20T06:02:43Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectDataBase -->
+      </class> <!-- testNG_Practice.CreateContactWithOrgname -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
