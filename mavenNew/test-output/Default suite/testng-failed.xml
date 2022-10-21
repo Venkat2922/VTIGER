@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Practice.CreateContactWithOrgname">
+      <class name="testNG_Practice.CreateLeadTest_2">
         <methods>
           <include name="connectDataBase"/>
           <include name="launchTheBrowser"/>
           <include name="logoutFromPage"/>
           <include name="disconnectDataBase"/>
           <include name="closeTheBrowser"/>
-          <include name="createContactWithOrgName"/>
           <include name="loginIntoPage"/>
+          <include name="createLeadTest"/>
         </methods>
-      </class> <!-- testNG_Practice.CreateContactWithOrgname -->
+      </class> <!-- testNG_Practice.CreateLeadTest_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -107,9 +107,13 @@ public class LeadPageClass {
 	public WebElement getSaveButton() {
 		return saveButton;
 	}
+	public void nameTypeDd(String value) {
+		WebDriverUtility webDriverUtility = new WebDriverUtility(driver);
+		webDriverUtility.selectByvalue(nameType, value);
+	}
 	
 	public void leadPageDetails() {
-		nameType.sendKeys("Mr");
+		//nameType.sendKeys("Mr");
 		firstName.sendKeys("Tarun");
 		lastName.sendKeys("Chillale");
 		companyName.sendKeys("amsa"+JavaUtility.generateRanNum());
